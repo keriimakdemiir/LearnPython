@@ -53,3 +53,35 @@ if hiz > 0:
         print("Lütfen araç bilgisini kontrol ediniz")
 else:
     print("Lütfen pozitif tam sayı hız değeri giriniz")
+
+# Example
+
+# Kullanıcıdan user_name ve password ve role bilgilerini alalım
+# user_name = beast password = 123 ise role = admin ise ekrana welcome the major yazdırın
+# user_name = beast password = 123 ise role = super admin ise ekrana welcome the beast yazdırın
+# user_name= bear , password = 321 ise role = manager ise ekrana welcome the manager
+# user_name= savage , password = 987 ise role manager ise ekrana welcome savage raider
+
+user_name = input("User Name: ")
+password = input("Password: ")
+role = input("Role: ")
+
+if user_name == "beast" and password == "123":
+    if role == "admin":
+        print("welcome the major")
+    elif role == "super admin":
+        print("welcome the beast")
+    else:
+        print("yetkiniz bulunmamaktadır")
+elif user_name == "bear" and password == "321":
+    if role == "manager":
+        print("welcome the manager")
+    else:
+        print("yetkiniz bulunmamaktadır")
+elif user_name == "savage" and password == "987":
+    if role == "manager":
+        print("welcome savage raider")
+    else:
+        print("yetkiniz bulunmaktadır")
+else:
+    print("Lütfen bilgilerinizi kontrol ediniz")

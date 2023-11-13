@@ -26,6 +26,12 @@ for c in my_string:
 for x in range(2, 30, 3):
   print(x)
 
+# Enumerate-> return index-value
+
+for element in enumerate(my_list):
+    print(element)
+
+
 # Example
 # 0 ile 100 arasında kaç tane çift sayı ve kaç tane tek sayı var yazdıralım
 
@@ -39,3 +45,18 @@ for num in range(0,101):
     tek_sayi += 1
 
 print(f"Tek sayıların adedi= {tek_sayi}\nÇift sayıların adedi= {cift_sayi}")
+
+# example
+# 'x' harfini kullanarak 4*4 kare sembolü yaratın
+
+for i in range(0,4):
+    for j in range(0,4):
+        print("x", end="")
+    print("")
+
+# 'x' sembollerinden dik üçgen yapın
+
+for i in range(0,5):
+    for j in range(0,i):
+        print("x", end="")
+    print("")

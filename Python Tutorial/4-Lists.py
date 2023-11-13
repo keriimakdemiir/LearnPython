@@ -45,3 +45,32 @@ print(lastList[4][1])
 smallList = lastList[-1]
 
 print(smallList)
+
+
+from random import randint, shuffle
+
+print(randint(0, 100))
+
+my_list = [10, 20, 30, 40, 50, 60]
+shuffle(my_list)
+print(my_list)
+
+# Zip
+
+food_list = ["apple", "banana", "melon"]
+calories_list = [100, 150, 200]
+day_list = ["monday", "tuesday", "wednesday"]
+
+zipped_list = list(zip(food_list, calories_list, day_list))
+print(zipped_list)
+
+# list comprehension
+
+number_list = [10,20,30,40,50,60]
+new_number_list = [num/2 for num in number_list]
+print(new_number_list)
+
+new_number_list = []
+for num in number_list:
+    new_number_list.append(num/2)
+print(new_number_list)

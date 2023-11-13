@@ -33,3 +33,42 @@ print(last_dictionary)
 new_dictionary = {"key1":20.25, "kk2":[40,{"k21":"a"}]}
 
 print(new_dictionary["kk2"][1]["k21"])
+
+# Example
+
+my_dictionary = {"k1": 10, "k2k": "a", "k32": 30, "k4": "c"}
+
+if "a" in my_dictionary.values():
+    print("yes")
+
+
+# Example
+
+products = [
+	{'name': 'Everlast Pro Boxing Gloves', 'price': 245},
+	{'name': 'Everlast Training Gloves', 'price': 145},
+	{'name': 'Everlast Heavy Bag', 'price': 345},
+	{'name': 'Everlast Hand-Wrap', 'price': 45},
+	{'name': 'Iphone 14 Pro Max', 'price': 52000},
+	{'name': 'Samsung S23 Ultra', 'price': 53000},
+	{'name': 'Lenovo X1 Carbon', 'price': 49000}
+    ]
+
+# products listesindeki bütün ürünlerin fiyatını toplayın
+
+for product in products:
+    total = 0
+    total += product["price"]
+print(f"Total Price: {total}")
+
+# products listesindeki fiyatı 30000'den büyük olan ürünlerin isimlerini yazdırın
+
+for product in products:
+    if product["price"] > 3000:
+        print(f"Name: {product.get('name')} - Price: {product['price']}")
+
+# ürün adı içerisinde Everlast geçen ve fiyat aralığı 150 ile 400 arasında olan ürünleri listeleyin
+
+for product in products:
+    if "Everlast" in product["name"] and 150 < product["price"] < 400:
+        print(f"Name: {product.get('name')} - Price: {product['price']}")
